@@ -1,0 +1,247 @@
+/* VARIABLES --------------------------------------------------------------*/
+:root {
+  --background-color-light: #40434c;
+  --background-color-dark: #2d2d37;
+  --highlight-color: #bea028;
+  --white: #f1f1f1;
+}
+
+/* RESETS --------------------------------------------------------------*/
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* BASE STYLES --------------------------------------------------------------*/
+body {
+  background-color: var(--background-color-light);
+  color: var(--white);
+  font: 1em Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a,
+a:visited {
+  color: var(--highlight-color);
+}
+
+a:hover,
+a:focus {
+  color: rgb(44, 154, 190);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+p {
+  margin-bottom: 1.8em;
+  margin-top: 0.2em;
+}
+
+/* HEADER STYLES */
+h1 {
+  color: var(--background-color-dark);
+  background-color: var(--white);
+  text-align: center;
+  padding: 1em 0.45em;
+  font-size: 3rem;
+}
+
+header p {
+  text-align: center;
+  margin-bottom: 1.1em;
+  font-size: 1.1em;
+}
+
+header p:last-child {
+  margin-bottom: 0;
+}
+header p:first-child {
+  font-weight: bold;
+}
+header #description {
+  background-color: var(--background-color-dark);
+  padding: 3em 1.5em;
+  border-bottom: solid var(--highlight-color) 5px;
+  border-top: solid var(--highlight-color) 5px;
+}
+
+#languages,
+#workExperience,
+#aditionalExperience,
+#education,
+aside {
+  margin-left: 50px;
+}
+
+#languages h2,
+#workExperience h2,
+#aditionalExperience h2,
+#education h2,
+aside h2 {
+  background-color: var(--highlight-color);
+  color: var(--background-color-dark);
+  padding: 0.6em 0.8em;
+  border-radius: 2px 0 0 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 3em 0 1.3em;
+}
+aside h2,
+#education h2,
+#aditionalExperience h2 {
+  background-color: var(--background-color-dark);
+  color: var(--white);
+  font-weight: normal;
+  letter-spacing: 0.15em;
+}
+#aditionalExperience > *,
+#education > *,
+aside > * {
+  margin-left: 1.5rem;
+  margin-right: 3rem;
+}
+
+#languages ul {
+  list-style-type: none;
+  padding: 2rem;
+  padding-right: 1rem;
+  background-color: var(--background-color-dark);
+  border-radius: 2px 0 0 2px;
+  margin: 0;
+}
+
+#languages li:last-child p {
+  /* Overrides the base margin for p's */
+  margin-bottom: 0;
+}
+
+.jobs img {
+  float: left;
+  margin-right: 0.4em;
+  margin-bottom: 0.8em;
+}
+.jobs p {
+  clear: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.jobs {
+  margin-bottom: 2em;
+}
+.jobs h3 {
+  padding-top: 0.4em;
+}
+
+footer,
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  list-style-type: square;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  border-top: var(--highlight-color) solid 1.5px;
+  background-color: var(--background-color-dark);
+  padding: 2em 1em;
+}
+footer ul {
+  padding-left: 1.5em;
+  margin-top: 1.5em;
+}
+footer ul li {
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  text-transform: lowercase;
+}
+footer h4 {
+  margin: 0 auto;
+  text-transform: lowercase;
+  font-weight: lighter;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  color: var(--highlight-color);
+}
+
+@media screen and (min-width: 527px) {
+  .jobs p:nth-child(3) {
+    clear: none;
+  }
+  .jobs h3 {
+    padding-top: 0;
+  }
+  .jobs img {
+    margin-right: 1em;
+  }
+  h1 {
+    padding: 1.2em 0;
+    font-size: 3rem;
+  }
+  header #description {
+    padding: 3em 1.5em;
+  }
+}
+@media screen and (min-width: 760px) {
+  #description p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    padding: 1.5em 0;
+    font-size: 3rem;
+  }
+  header #description {
+    padding: 5em 1.5em;
+  }
+  #aditionalExperience h3:first-of-type,
+  #aditionalExperience p:first-of-type,
+  #education h3:first-of-type,
+  #education p:first-of-type {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .jobs p:last-child {
+    max-width: 60%;
+  }
+  .jobs {
+    margin: 3em;
+  }
+  footer ul {
+    flex-direction: row;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer ul li {
+    margin-right: 4em;
+  }
+}
