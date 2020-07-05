@@ -3,18 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Professional profile</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>FPV - Professional profile</title>
+    <script src="https://use.fontawesome.com/20397a5bd7.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
     <header>
-      <h1>
-        Franco Panozzo Vitoloni
-      </h1>
+      <div id="h1-container">
+        <h1>
+          Franco Panozzo Vitoloni
+        </h1>
+      </div>
       <div id="description">
         <p>
-          Tech friendly, language enthusiast, business oriented and highly
-          resolutive.
+          <strong>
+            Tech friendly, language enthusiast, business oriented and highly
+            resolutive.
+          </strong>
         </p>
         <p>
           Honesty, responsability and purpose are some of my core values.
@@ -30,19 +39,22 @@
       <section id="workExperience">
         <h2>Work experience</h2>
         <div class="jobs">
-          <img
-            src="amex-logo.jpg"
-            alt="American Express logo"
-            width="100px"
-            height="100px"
-          />
-          <h3>
-            Customer Care Professional
-          </h3>
-          <p>
-            American Express <br />(Buenos Aires, Argentina) <br />
-            Sep 2018 - Jul 2019
-          </p>
+          <div>
+            <img
+              src="amex-logo.jpg"
+              alt="American Express logo"
+              width="100px"
+              height="100px"
+            />
+            <div class="job-description">
+              <h3>
+                Customer Care Professional
+              </h3>
+              <span>American Express</span>
+              <span>Buenos Aires, Argentina</span>
+              <span>09/2018 - 07/2019</span>
+            </div>
+          </div>
           <p>
             While being a billings from travel (BFT) process analyst I executed
             renconciliations between airline debits/reimbursements and travel
@@ -51,18 +63,20 @@
           </p>
         </div>
         <div class="jobs">
-          <img
-            src="poly-logo.png"
-            alt="Poly Audio logo"
-            width="100px"
-            height="100px"
-          />
-          <h3>Channel Operations Specialist</h3>
-          <p>
-            Poly Audio <br />
-            (Hoofddorp, Netherlands) <br />
-            Sep 2019 - Mar 2020
-          </p>
+          <div>
+            <img
+              src="poly-logo.png"
+              alt="Poly Audio logo"
+              width="100px"
+              height="100px"
+            />
+            <div class="job-description">
+              <h3>Channel Operations Specialist</h3>
+              <span>Poly Audio</span>
+              <span>Hoofddorp, Netherlands</span>
+              <span>09/2019 - 03/2020</span>
+            </div>
+          </div>
           <p>
             Order management of services and licences worlwide using the
             following tools: Oracle, Salesforce, Siebel, Microsoft Office
@@ -99,58 +113,91 @@
       </section>
       <section id="aditionalExperience">
         <h2>Aditional experience</h2>
-        <h3>Voluntary work</h3>
-        <p>
-          Various activities such as spending time with elderly people at a
-          nursing home, helping with cores and playing games at a kindergarten
-          for handycapable kids and the pediatric wing of the regional hospital,
-          all during highschool.
-        </p>
-        <h3>Year abroad</h3>
-        <p>
-          Exchange year in Lyon, France as part of the Youth Exchange Program
-          sponsored by the Rotary Club (2015-2016).
-        </p>
+        <div class="content">
+          <div>
+            <h3>Voluntary work</h3>
+            <p>
+              Various activities such as spending time with elderly people at a
+              nursing home, helping with chores and playing games at a
+              kindergarten for handycapable kids and the pediatric wing of the
+              regional hospital, all during highschool.
+            </p>
+          </div>
+          <div>
+            <h3>Year abroad</h3>
+            <p>
+              Exchange year in Lyon, France as part of the Youth Exchange
+              Program sponsored by the Rotary Club (2015-2016).
+            </p>
+          </div>
+        </div>
       </section>
       <section id="education">
         <h2>Education</h2>
-        <h3>High school diploma</h3>
-        <p>
-          (Foreign languages oriented) <br />
-          2003 - 2015 at Santo Tomas de Aquino
-        </p>
-        <h3>Collegue degree</h3>
-        <p>
-          Pre med school and first year of medicine <br />
-          2017-2018 Universidad del Salvador
-        </p>
+        <div class="content">
+          <div>
+            <h3>High school diploma</h3>
+            <p>
+              (Foreign languages oriented) 2003 - 2015 at Santo Tomas de Aquino
+            </p>
+          </div>
+          <div>
+            <h3>Collegue degree</h3>
+            <p>
+              Pre med school and first year of medicine 2017-2018 Universidad
+              del Salvador
+            </p>
+          </div>
+        </div>
       </section>
       <aside>
-        <h2>Also...</h2>
-        <p>
-          Currently learning how to write HTML and CSS in order to pursue a
-          career in web development.
-        </p>
-      </aside>
-      <footer>
-        <h4>Contact info</h4>
         <ul>
-          <li>Cell phone: <a href="tel:+31629242834">(+31) 6 29242834</a></li>
           <li>
-            Email:
-            <a href="mailto:francopanozzovitoloni@gmail.com"
-              >francopanozzovitoloni@gmail.com</a
-            >
-          </li>
-          <li>
-            LinkedIn:
             <a
               href="https://www.linkedin.com/in/franco-panozzo/"
               target="_blank"
-              >www.linkedin.com/in/franco-panozzo</a
+              title="LinkedIn"
+              ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:francopanozzo@hotmail.com.ar" title="Email"
+              ><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+31629242834" title="Mobile number"
+              ><i class="fa fa-phone fa-2x" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </aside>
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/franco-panozzo/"
+              target="_blank"
+              title="LinkedIn"
+              >LinkedIn</a
+            >
+          </li>
+
+          <li>
+            <a href="mailto:francopanozzo@hotmail.com.ar" title="Email"
+              >francopanozzo@hotmail.com.ar
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+31629242834" title="Mobile number"
+              >+31 6 29 24 28 34</a
             >
           </li>
         </ul>
+        <span>website made by Franco Panozzo Vitoloni</span>
       </footer>
     </main>
   </body>
