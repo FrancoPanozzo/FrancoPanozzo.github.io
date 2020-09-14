@@ -1,204 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>FPV - Professional profile</title>
-		<script src="https://use.fontawesome.com/20397a5bd7.js"></script>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.min.css" />
-	</head>
-	<body>
-		<header>
-			<div id="h1-container">
-				<h1>
-					Franco Panozzo Vitoloni
-				</h1>
-			</div>
-			<div id="description">
-				<p>
-					<strong>
-						Tech friendly, language enthusiast, business oriented and highly
-						resolutive.
-					</strong>
-				</p>
-				<p>
-					Honesty, responsability and purpose are some of my core values.
-				</p>
-				<p>
-					Looking for a new opportunity to keep on learning and growing my
-					skillset while making myself valuable to clients by bringing quick,
-					assertive solutions and building strong relationships.
-				</p>
-			</div>
-		</header>
-		<main>
-			<section id="workExperience">
-				<h2>Work experience</h2>
-				<div class="jobs">
-					<div>
-						<img
-							src="amex-logo.jpg"
-							alt="American Express logo"
-							width="100px"
-							height="100px"
-						/>
-						<div class="job-description">
-							<h3>
-								Customer Care Professional
-							</h3>
-							<span>American Express</span>
-							<span>Buenos Aires, Argentina</span>
-							<span>09/2018 - 07/2019</span>
-						</div>
-					</div>
-					<p>
-						While being a billings from travel (BFT) process analyst I executed
-						renconciliations between airline debits/reimbursements and travel
-						agency invoices/credit notes, and actively communicated via web with
-						travel agencies for the french and spanish market.
-					</p>
-				</div>
-				<div class="jobs">
-					<div>
-						<img
-							src="poly-logo.png"
-							alt="Poly Audio logo"
-							width="100px"
-							height="100px"
-						/>
-						<div class="job-description">
-							<h3>Channel Operations Specialist</h3>
-							<span>Poly Audio</span>
-							<span>Hoofddorp, Netherlands</span>
-							<span>09/2019 - 03/2020</span>
-						</div>
-					</div>
-					<p>
-						Order management of services and licences worlwide using the
-						following tools: Oracle, Salesforce, Siebel, Microsoft Office
-						software.
-					</p>
-				</div>
-			</section>
-			<section id="languages">
-				<h2>Languages</h2>
-				<ul>
-					<li>
-						<h3>Spanish</h3>
-						<p>Native speaker</p>
-					</li>
-					<li>
-						<h3>English</h3>
-						<p>
-							Full professional proficiency <br />
-							<i> First certificate in English (CEFR C1)</i>
-						</p>
-					</li>
-					<li>
-						<h3>French</h3>
-						<p>
-							Advanced level <br />
-							<i lang="fr">Diplome d'etudes en langue francaise (CEFR B2)</i>
-						</p>
-					</li>
-					<li>
-						<h3>Portuguese</h3>
-						<p>Basic level</p>
-					</li>
-				</ul>
-			</section>
-			<section id="aditionalExperience">
-				<h2>Aditional experience</h2>
-				<div class="content">
-					<div>
-						<h3>Voluntary work</h3>
-						<p>
-							Various activities such as spending time with elderly people at a
-							nursing home, helping with chores and playing games at a
-							kindergarten for handycapable kids and the pediatric wing of the
-							regional hospital, all during highschool.
-						</p>
-					</div>
-					<div>
-						<h3>Year abroad</h3>
-						<p>
-							Exchange year in Lyon, France as part of the Youth Exchange
-							Program sponsored by the Rotary Club (2015-2016).
-						</p>
-					</div>
-				</div>
-			</section>
-			<section id="education">
-				<h2>Education</h2>
-				<div class="content">
-					<div>
-						<h3>High school diploma</h3>
-						<p>
-							(Foreign languages oriented) 2003 - 2015 at Santo Tomas de Aquino
-						</p>
-					</div>
-					<div>
-						<h3>Collegue degree</h3>
-						<p>
-							Pre med school and first year of medicine 2016-2018 Universidad
-							del Salvador
-						</p>
-					</div>
-				</div>
-			</section>
-			<aside>
-				<ul>
-					<li>
-						<a
-							href="https://www.linkedin.com/in/franco-panozzo/"
-							target="_blank"
-							title="LinkedIn"
-							><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-						</a>
-					</li>
+<html>
+  <head>
+    <title>Franco Panozzo - Front end developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
 
-					<li>
-						<a href="mailto:francopanozzo@hotmail.com.ar" title="Email"
-							><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-						</a>
-					</li>
+      <!-- Menu -->
+      <nav id="menu">
+        <div class="inner">
+          <ul class="links">
+            <li><a id="home-link" class="emojis" href="#">Home</a></li>
+            <li>
+              <a id="about-link" class="emojis" href="#about">About me</a>
+            </li>
+            <li>
+              <a id="portfolio-link" class="emojis" href="#portfolio"
+                >My work</a
+              >
+            </li>
+            <li>
+              <a id="contact-link" class="emojis" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
+      </nav>
 
-					<li>
-						<a href="tel:+31629242834" title="Mobile number"
-							><i class="fa fa-phone fa-2x" aria-hidden="true"></i
-						></a>
-					</li>
-				</ul>
-			</aside>
-			<footer>
-				<ul>
-					<li>
-						<a
-							href="https://www.linkedin.com/in/franco-panozzo/"
-							target="_blank"
-							title="LinkedIn"
-							>LinkedIn</a
-						>
-					</li>
+      <!-- Banner -->
+      <section id="banner">
+        <div class="inner">
+          <h2>Franco Panozzo Vitoloni</h2>
+          <p>
+            Front end web developer.<a
+              href="https://www.linkedin.com/in/franco-panozzo/"
+              target="_blank"
+              ><span class="icon brands fa-linkedin"></span></a
+            ><a href="https://github.com/FrancoPanozzo" target="_blank"
+              ><span class="icon brands fa-github"></span
+            ></a>
+          </p>
+        </div>
+      </section>
 
-					<li>
-						<a href="mailto:francopanozzo@hotmail.com.ar" title="Email"
-							>francopanozzo@hotmail.com.ar
-						</a>
-					</li>
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <!-- About me -->
+        <section id="about" class="wrapper spotlight style1">
+          <div class="inner">
+            <img
+              src="images/profile.png"
+              alt="Profile picture"
+              title="Me learning HTML and CSS in Thailand"
+              class="image"
+            />
+            <div class="content">
+              <h2 class="major">About me</h2>
+              <p>
+                I'm a Front-End Developer based in Amsterdam. I have serious
+                passion for clean and intuitive user experiences with an
+                emphasis in interactivity and smart UI features.
+              </p>
+              <p>
+                I'm originally from Argentina but I hold an EU passport thanks
+                to my italian ancestors. I love and play football since an early
+                age and I am a big fan of Boca Juniors. In my free time I enjoy
+                cooking and learning new recipes as well as playing videogames.
+              </p>
+            </div>
+          </div>
+        </section>
 
-					<li>
-						<a href="tel:+31629242834" title="Mobile number"
-							>+31 6 29 24 28 34</a
-						>
-					</li>
-				</ul>
-				<span>website made by Franco Panozzo Vitoloni</span>
-			</footer>
-		</main>
-	</body>
+        <!-- Skills -->
+        <section id="skills" class="wrapper alt spotlight style2">
+          <div class="inner">
+            <div class="content">
+              <h2 class="major">Skills</h2>
+              <div class="skill-list">
+                <img src="images/html.png" alt="HTML5" title="HTML5" />
+                <img src="images/css.png" alt="CSS3" title="CSS3" />
+                <img src="images/sass.png" alt="SASS/SCSS" title="SASS/SCSS" />
+                <img
+                  src="images/javascript.png"
+                  alt="JavaScript"
+                  title="JavaScript"
+                />
+                <img src="images/git.png" alt="Git" title="Git" />
+                <img src="images/github.png" alt="GitHub" title="GitHub" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="wrapper style1">
+          <div class="inner">
+            <h2 class="major">Portfolio</h2>
+            <section class="features">
+              <article>
+                <img class="image" src="images/weather-app.png" alt="" />
+                <h3 class="major">Weather app</h3>
+                <p>
+                  Get the current weather information of any city, state or
+                  country using data from the
+                  <a href="https://openweathermap.org/" target="_blank"
+                    >OpenWeather API</a
+                  >.
+                </p>
+                <h4>Technologies used:</h4>
+                <p>
+                  HTML / Bootstrap / JavaScript / AJAX / JSON / OpenWeather API.
+                </p>
+
+                <a
+                  href="https://not-a-generic-weather-app.netlify.app/"
+                  class="special"
+                  target="_blank"
+                  >Visit website</a
+                >
+                <a
+                  href="https://github.com/FrancoPanozzo/weather-app"
+                  class="special"
+                  target="_blank"
+                  >See the code</a
+                >
+              </article>
+              <article>
+                <img class="image" src="images/bonzo-site.png" alt="" />
+                <h3 class="major">'Bonzo' Tribute website</h3>
+                <p>
+                  A tribute website for one of my favourite drummers with a drum
+                  app you can play with your keyboard.
+                </p>
+                <h4>Technologies used:</h4>
+                <p>HTML / SCSS / JavaScript</p>
+                <a
+                  href="https://john-bonham-tribute-website.netlify.app/"
+                  class="special"
+                  target="_blank"
+                  >Visit website</a
+                >
+                <a
+                  href="https://github.com/FrancoPanozzo/John-bonham-tribute-website"
+                  class="special"
+                  target="_blank"
+                  >See the code</a
+                >
+              </article>
+              <article>
+                <img class="image" src="images/catz.png" alt="" />
+                <h3 class="major">Catz</h3>
+                <p>
+                  Instagram-like infinite feed of cat images provided via
+                  <a href="https://thecatapi.com/" target="_blank">TheCatAPI</a
+                  >. You can like and remove a like (sending data to the API).
+                </p>
+                <h4>Technologies used:</h4>
+                <p>HTML / CSS / JavaScript / AJAX / JSON / TheCatAPI.</p>
+                <a
+                  href="https://catz-the-cutest-of-them-all.netlify.app/"
+                  class="special"
+                  target="_blank"
+                  >Visit website</a
+                >
+                <a
+                  href="https://github.com/FrancoPanozzo/catz"
+                  class="special"
+                  target="_blank"
+                  >See the code</a
+                >
+              </article>
+              <article>
+                <img class="image" src="images/tip-calculator.png" alt="" />
+                <h3 class="major">Tip calculator</h3>
+                <p>
+                  A simple app to help determine how much tip should be given
+                  based on meal price, quality of the service provided and
+                  amount of people eating.
+                </p>
+                <h4>Technologies used:</h4>
+                <p>HTML / CSS / JavaScript</p>
+                <a
+                  href="https://calculate-your-tip.netlify.app/"
+                  class="special"
+                  target="_blank"
+                  >Visit website</a
+                >
+                <a
+                  href="https://github.com/FrancoPanozzo/tip-calculator"
+                  class="special"
+                  target="_blank"
+                  >See the code</a
+                >
+              </article>
+            </section>
+            <!-- Navigation option for when I have a bigger portfolio -->
+            <!-- <ul class="actions">
+              <li><a href="#" class="button">Browse All</a></li>
+            </ul> -->
+          </div>
+        </section>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div id="contact" class="inner">
+          <h2 class="major">Get in touch</h2>
+
+          <ul class="contact">
+            <li class="icon solid fa-envelope">
+              <a href="mailto:francopanozzo@hotmail.com.ar"
+                >francopanozzo@hotmail.com.ar</a
+              >
+            </li>
+            <li class="icon brands fa-linkedin">
+              <a
+                href="https://www.linkedin.com/in/franco-panozzo/"
+                target="_blank"
+                >linkedin.com/franco-panozzo</a
+              >
+            </li>
+            <li class="icon brands fa-github">
+              <a href="https://github.com/FrancoPanozzo" target="_blank"
+                >github.com/FrancoPanozzo</a
+              >
+            </li>
+            <li class="icon solid fa-phone">
+              <a href="tel:+31629242834">+31 (6) 2924-2834</a>
+            </li>
+          </ul>
+          <ul class="copyright">
+            <li>&copy; 2020 Franco Panozzo Vitoloni. All rights reserved.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
