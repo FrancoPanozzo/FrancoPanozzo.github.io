@@ -4131,12 +4131,12 @@ body.is-preload #banner p {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .skill-list img {
   height: 80px;
-  margin: 0.5em 0.1em;
+  margin: 1.5em 1.5em;
 }
 
 section#portfolio h2 {
